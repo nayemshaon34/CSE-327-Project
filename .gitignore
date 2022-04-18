@@ -4,7 +4,14 @@
 /node_modules
 /.pnp
 .pnp.js
+<<<<<<< HEAD
 .package-lock.json
+=======
+<<<<<<< Updated upstream
+=======
+/package-lock.json
+>>>>>>> Stashed changes
+>>>>>>> login
 
 # testing
 /coverage
