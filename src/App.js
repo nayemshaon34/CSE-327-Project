@@ -1,11 +1,22 @@
 import './App.css';
-import Home from './Pages/Home/Home';
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import AuthProvider from './Context/AuthProvider';
+import TopHeader from './Pages/Shared/Header/TopHeader/TopHeader';
+import Header from './Pages/Shared/Header/Header/Header';
+import Footer from './Pages/Shared/Footer/Footer/Footer';
+
 
 function App() {
   return (
-    <div className="App">
-      <h3>This is a webpage</h3>
-      <Home></Home>
+    <div>
+      <AuthProvider>
+        <Router>
+          <TopHeader></TopHeader>
+         <Header></Header>
+         
+          <Footer></Footer>
+        </Router>
+      </AuthProvider>
     </div>
   );
 }
