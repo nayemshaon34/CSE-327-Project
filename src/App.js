@@ -1,11 +1,11 @@
 import './App.css';
-import Login from './Pages/Login/Login';
+import Home from './Pages/Home/Home';
 
 function App() {
   return (
     <div className="App">
       <h3>This is a webpage</h3>
-      <Login></Login>
+      <Home></Home>
     </div>
   );
 }
