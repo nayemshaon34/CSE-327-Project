@@ -7,13 +7,14 @@ import Footer from './Pages/Shared/Footer/Footer/Footer';
 import Login from './Pages/Login/Login';
 import Register from './Pages/Register/Register';
 import Home from './Pages/Home/Home';
+import { BrowserRouter } from 'react-router-dom';
 
 
 function App() {
   return (
     <div>
       <AuthProvider>
-        <Router>
+        <BrowserRouter>
           <TopHeader></TopHeader>
          <Header></Header>
          <Switch>
@@ -31,7 +32,7 @@ function App() {
             </Route>
           </Switch>
           <Footer></Footer>
-        </Router>
+        </BrowserRouter>
       </AuthProvider>
     </div>
   );
