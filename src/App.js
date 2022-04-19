@@ -4,6 +4,7 @@ import AuthProvider from './Context/AuthProvider';
 import TopHeader from './Pages/Shared/Header/TopHeader/TopHeader';
 import Header from './Pages/Shared/Header/Header/Header';
 import Footer from './Pages/Shared/Footer/Footer/Footer';
+import Home from './Pages/Home/Home';
 
 
 function App() {
@@ -13,7 +14,16 @@ function App() {
         <Router>
           <TopHeader></TopHeader>
          <Header></Header>
-         
+         <Switch>
+            <Route exact path="/">
+              <Home
+
+              ></Home>
+            </Route>
+            <Route path="/home">
+              <Home></Home>
+            </Route>
+            </Switch>
           <Footer></Footer>
         </Router>
       </AuthProvider>
