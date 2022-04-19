@@ -6,6 +6,7 @@ import Header from './Pages/Shared/Header/Header/Header';
 import Footer from './Pages/Shared/Footer/Footer/Footer';
 import Login from './Pages/Login/Login';
 import Register from './Pages/Register/Register';
+import Home from './Pages/Home/Home';
 
 
 function App() {
@@ -16,6 +17,12 @@ function App() {
           <TopHeader></TopHeader>
          <Header></Header>
          <Switch>
+         <Route exact path="/">
+              <Home></Home>
+            </Route>
+            <Route path="/home">
+              <Home></Home>
+            </Route>
           <Route path="/login">
               <Login></Login>
             </Route>
