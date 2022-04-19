@@ -5,13 +5,14 @@ import TopHeader from './Pages/Shared/Header/TopHeader/TopHeader';
 import Header from './Pages/Shared/Header/Header/Header';
 import Footer from './Pages/Shared/Footer/Footer/Footer';
 import Home from './Pages/Home/Home';
+import { BrowserRouter } from 'react-router-dom';
 
 
 function App() {
   return (
     <div>
       <AuthProvider>
-        <Router>
+        <BrowserRouter>
           <TopHeader></TopHeader>
          <Header></Header>
          <Switch>
@@ -25,7 +26,7 @@ function App() {
             </Route>
             </Switch>
           <Footer></Footer>
-        </Router>
+        </BrowserRouter>
       </AuthProvider>
     </div>
   );

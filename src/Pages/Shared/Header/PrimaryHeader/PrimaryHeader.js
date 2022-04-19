@@ -1,6 +1,7 @@
 import Button from '@restart/ui/esm/Button';
 import React from 'react';
 import { Container, Form, FormControl, Nav, Navbar, NavDropdown, Offcanvas } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import useAuth from '../../../../Hooks/useAuth';
 import logo from '../../../../Images/logo.png';
@@ -21,15 +22,15 @@ const PrimaryHeader = () => {
                             <img src={logo} alt="" className="w-100" />
                         </Navbar.Brand>
                         <Nav className="me-auto">
-                            <Nav.Link as={Link} to="/home">Home</Nav.Link>
-                            <Nav.Link as={Link} to="/about">About</Nav.Link>
-                            <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
+                            <NavLink as={Link} to="/home">Home</NavLink>
+                            <NavLink as={Link} to="/about">About</NavLink>
+                            <NavLink as={Link} to="/contact">Contact</NavLink>
 
 
-                            <Nav.Link as={Link} to="/tours">Tours</Nav.Link>
-                            <Nav.Link as={Link} to="/addanewservices">Add New Services</Nav.Link>
-                            <Nav.Link as={Link} to="/manageallorders">Manage All Orders</Nav.Link>
-                            <Nav.Link as={Link} to="/myorders">My Orders</Nav.Link>
+                            <NavLink as={Link} to="/tours">Tours</NavLink>
+                            <NavLink as={Link} to="/addanewservices">Add New Services</NavLink>
+                            <NavLink as={Link} to="/manageallorders">Manage All Orders</NavLink>
+                            <NavLink as={Link} to="/myorders">My Orders</NavLink>
                         </Nav>
                         <Nav className="me-auto">
 
